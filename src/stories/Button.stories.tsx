@@ -1,6 +1,4 @@
-import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import * as C from 'constant';
 import Button from 'components/Button';
 
 export default {
@@ -17,3 +15,4 @@ Primary.args = {
   width: "200px",
   onClick: () => alert('Clicked')
 };
+

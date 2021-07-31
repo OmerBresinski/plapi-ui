@@ -13,6 +13,10 @@ export interface ButtonProps {
     width?: string;
 }
 
+export interface StyledButtonProps extends ButtonProps {
+    isRounded?: boolean;
+}
+
 type Color = "primary" | "secondary" | "danger" | "invert" | "light" | "white" | "blue" | "orange";
 
 type Size = "xs" | "s" | "m" | "l" | "xl" | "xxl";

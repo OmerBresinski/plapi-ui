@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import { ButtonProps } from "./types";
+import { StyledButtonProps } from "./types";
 import * as C from "constant";
 
-export const Button = styled.div<ButtonProps>`
+export const Button = styled.div<StyledButtonProps>`
     display: flex;
     flex-direction: ${({ iconPosition }) => (iconPosition === "end" ? "row" : "row-reverse")};
     justify-content: center;
     text-align: center;
     text-transform: capitalize;
     padding: ${({ size }) => `${DIMENSIONS[size].paddingBlock}px ${DIMENSIONS[size].paddingInline}px`};
-    border-radius: ${({ rounded }) => (rounded ? "50px" : "4px")};
+    border-radius: ${({ isRounded }) => (isRounded ? "50px" : "4px")};
     font-size: ${({ size }) => `${DIMENSIONS[size].fontSize}px`};
     line-height: ${({ size }) => `${DIMENSIONS[size].lineHeight}px`};
     font-family: "Arimo", "arial";
