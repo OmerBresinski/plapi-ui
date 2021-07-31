@@ -16,7 +16,7 @@ export const Button = styled.div<StyledButtonProps>`
     border: 1px solid;
     cursor: pointer;
     outline: none;
-    width: ${({ width }) => width};
+    width: ${({ width }) => width || "fit-content"};
     color: ${({ variant, color }) => `${THEME[variant][color].default.color}`};
     background-color: ${({ variant, color }) => `${THEME[variant][color].default.backgroundColor}`};
     border: ${({ variant, color }) => `${THEME[variant][color].default.border}`};
