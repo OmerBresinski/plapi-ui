@@ -1,7 +1,6 @@
 {
   "name": "plapi-ui",
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -19,10 +18,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "tsc --build \"./tsconfig.json\"",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -64,10 +60,10 @@
     "@types/styled-components": "^5.1.11"
   },
   "directories": {
-    "dist": "dist"
+    "lib": "lib"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "repository": {
     "type": "git",
